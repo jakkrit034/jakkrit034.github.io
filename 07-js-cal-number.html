@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>07-js-cal-number.html</title>
+<script>
+// จักรกริช จันทรคณา
+</script>
+</head>
+<body>
+    Input Number : <input type="text" name="num1"
+    id="num1" style="width: 30px;">
+    <br><br>
+    Input Number : <input type="text" name="num2"
+    id="num2" style="width: 30px;">
+    <br><br>
+   <button style="width: 30px;" onclick="plus()">+</button>
+   <button style="width: 30px;" onclick="minus()">-</button>
+   <button style="width: 30px;" onclick="multiply()">*</button>
+   <button style="width: 30px;" onclick="divine()">/</button>
+   <br><br>
+    <p id="output"></p>
+    <script>
+    function plus(params){
+    document.getElementById('output').innerHTML= "Ans = "+
+    (Number(document.getElementById('num1')
+    .value)+
+    Number(document.getElementById('num2')
+    .value))
+    }
+    
+    function minus(params){
+    document.getElementById('output').innerHTML= "Ans = "+
+   (Number(document.getElementById('num1')
+    .value)-
+    Number(document.getElementById('num2')
+    .value))
+    }
+    
+    function multiply(params){
+    document.getElementById('output').innerHTML= "Ans = "+
+    (Number(document.getElementById('num1')
+    .value)*
+    Number(document.getElementById('num2')
+    .value))
+    }
+    
+    function divine(params){
+    document.getElementById('output').innerHTML= "Ans = "+
+    (Number(document.getElementById('num1')
+    .value)/
+    Number(document.getElementById('num2')
+    .value))
+    }
+    </script>
+</body>
+</html>
