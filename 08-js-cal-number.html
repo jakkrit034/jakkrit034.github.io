@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>08-js-cal-number.html</title>
+<script>
+// จักรกริช จันทรคณา
+</script>
+</head>
+<body>
+    Input Number : <input type="text" name="num1"
+    id="num1" style="width: 30px;">
+    <br><br>
+    Input Number : <input type="text" name="num2"
+    id="num2" style="width: 30px;">
+    <br><br>
+   <button style="width: 30px;" onclick="plus()">+</button>
+   <button style="width: 30px;" onclick="minus()">-</button>
+   <button style="width: 30px;" onclcik="multiply()">*</button>
+   <button style="width: 30px;" onclick="divine()">/</button>
+   <br><br>
+    <span id="output"></span>
+    <script>
+    let n1=0
+    let n2=0
+    let ans =0
+    function start(){
+    n1 = Number(document.getElementById('num1').value)
+    n2 = Number(document.getElementById('num2').value)
+    }
+    
+    function plus(){
+    start()
+    ans = n1+n2
+    document.getElementById('output').innerHTML= "Ans = "+ans
+    }
+    
+    function minus(){
+    start()
+    ans = n1-n2
+    document.getElementById('output').innerHTML= "Ans = "+ans
+    }
+    
+    function multiply(){
+    start()
+    ans = n1*n2
+    document.getElementById('output').innerHTML= "Ans = "+ans
+    
+    }
+    
+    function divine(){
+    start()
+    ans = n1/n2
+    document.getElementById('output').innerHTML= "Ans = "+ans
+   
+    }
+    </script>
+</body>
+</html>
