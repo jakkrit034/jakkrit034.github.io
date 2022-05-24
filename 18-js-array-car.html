@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- จักรกรกริช จันทรคณา -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18-js-array-car</title>
+    <script>
+        let car =['Toyota','Isuzu','Mazda','Ford']
+    </script>
+</head>
+<body>
+    <script>
+//        document.write(car[0]+'<br>')
+//        document.write(car[1]+'<br>')
+//        document.write(car[2]+'<br>')
+
+        car[4]='MG'
+        car[5]='Honda'
+        car[6]='Nissan'
+
+        car.pop()       // ลบอันแรก
+        car.push('BMW') // ใส่ท้ายสุด
+        car.shift()     // ลบอันแรก
+        car.unshift('Volvo') //ใส่อันแรก
+        // delete car[2]       //ลบข้อมูล แต่ตำแหน่งยังอยู่
+        car.sort()      // เรียงตำแหน่งตามตัวอักษร
+        car.reverse()   // เรียนตำแหน่ง ต้องการ sort
+        
+        // ดึงข้อมูลจาก array โดยใช้ for
+        // for(i=0;i<car.length;i++){
+        //     document.write(car[i]+'<br>')
+        // }
+
+        // ดึงข้อมูลจาก array โดยใช้ for in
+        // for(let i in car){
+        //     document.write(car[i]+'<br>')
+        // }
+
+        
+        // ดึงข้อมูลจาก array โดยใช้ for of
+        for(let i of car){
+            document.write(i+'<br>')
+        }
+            
+        // ดึงข้อมูลจาก array โดยใช้ while
+        // let i=0
+        // while(i<car.length){
+        //     document.write(car[i]+'<br>')
+        //     i++
+        // }
+
+    </script>
+</body>
+</html>
